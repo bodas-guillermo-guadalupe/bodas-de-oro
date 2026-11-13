@@ -105,3 +105,14 @@ VERSIÓN V16
 - URL de prueba para romper caché de WhatsApp:
   https://bodas-guillermo-guadalupe.github.io/bodas-de-oro/?v=16
 - La imagen social es 1200x630 JPEG.
+
+VERSIÓN V17
+- Se añadió música a la invitación.
+- La canción comienza al tocar ABRIR INVITACIÓN.
+- musica.mp3 ya está recortado para comenzar desde el segundo 16 del archivo original.
+- La música se repite al terminar.
+- Hay un botón flotante para pausar/reanudar.
+
+VERSIÓN V18
+- Se aumentó ligeramente el grosor de la fecha del evento en todos los lugares donde aparece.
+- También se reforzó la fecha grande de la sección “Guarda la fecha”.

@@ -3,7 +3,23 @@ const invitation=document.getElementById("invitation");
 const openBtn=document.getElementById("openInvitation");
 document.body.classList.add("no-scroll");
 
-openBtn.addEventListener("click",()=>{
+const weddingMusic=document.getElementById("weddingMusic");
+const musicToggle=document.getElementById("musicToggle");
+
+openBtn.addEventListener("click",async()=>{
+  // El archivo musica.mp3 ya fue recortado para comenzar en el segundo 16.
+  try{
+    weddingMusic.currentTime=0;
+    await weddingMusic.play();
+    musicToggle.classList.add("visible");
+    musicToggle.textContent="❚❚";
+    musicToggle.classList.remove("paused");
+  }catch(error){
+    // Si el navegador bloquea el audio, el botón queda disponible para iniciarlo manualmente.
+    musicToggle.classList.add("visible","paused");
+    musicToggle.textContent="♪";
+  }
+
   cover.style.opacity="0";
   cover.style.transition="opacity .65s ease";
   setTimeout(()=>{
@@ -13,6 +29,32 @@ openBtn.addEventListener("click",()=>{
     observeSections();
   },650);
 });
+
+if(musicToggle && weddingMusic){
+  musicToggle.addEventListener("click",async()=>{
+    if(weddingMusic.paused){
+      try{
+        await weddingMusic.play();
+        musicToggle.textContent="❚❚";
+        musicToggle.classList.remove("paused");
+      }catch(error){}
+    }else{
+      weddingMusic.pause();
+      musicToggle.textContent="♪";
+      musicToggle.classList.add("paused");
+    }
+  });
+
+  weddingMusic.addEventListener("play",()=>{
+    musicToggle.textContent="❚❚";
+    musicToggle.classList.remove("paused");
+  });
+
+  weddingMusic.addEventListener("pause",()=>{
+    musicToggle.textContent="♪";
+    musicToggle.classList.add("paused");
+  });
+}
 
 const eventDate=new Date("2026-11-28T11:00:00-06:00").getTime();
 
