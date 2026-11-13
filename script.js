@@ -4,6 +4,9 @@ const openBtn=document.getElementById("openInvitation");
 document.body.classList.add("no-scroll");
 
 const weddingMusic=document.getElementById("weddingMusic");
+if(weddingMusic){
+  weddingMusic.volume=0.7;
+}
 const musicToggle=document.getElementById("musicToggle");
 
 openBtn.addEventListener("click",async()=>{

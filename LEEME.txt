@@ -116,3 +116,6 @@ VERSIÓN V17
 VERSIÓN V18
 - Se aumentó ligeramente el grosor de la fecha del evento en todos los lugares donde aparece.
 - También se reforzó la fecha grande de la sección “Guarda la fecha”.
+
+VERSIÓN V19
+- Volumen inicial de la música ajustado al 70%.
