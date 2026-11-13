@@ -14,7 +14,7 @@ body{
   background:var(--ivory);
   color:var(--text);
   font-family:"Montserrat",sans-serif;
-  font-weight:300;
+  font-weight:400;
   overflow-x:hidden;
 }
 body.no-scroll{overflow:hidden}
@@ -895,4 +895,35 @@ h3{
     margin-top:9px;
     padding:10px 16px;
   }
+}
+
+/* V15 — tipografía ligeramente más gruesa para mejor lectura */
+body{
+  font-weight:400;
+}
+
+p,
+.lead,
+.quote,
+.event-card,
+.timeline-row,
+.form-note,
+.rsvp-form,
+.cover13__eyebrow,
+.cover13__date,
+.cover12-eyebrow,
+.cover12-date,
+.landing-v11__eyebrow,
+.landing-v11__date{
+  font-weight:400;
+}
+
+.eyebrow{
+  font-weight:400;
+}
+
+.hero-date,
+.footer-date,
+.date{
+  font-weight:400;
 }

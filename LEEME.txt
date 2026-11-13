@@ -87,3 +87,14 @@ VERSIÓN V13
 - La foto de boda usa recorte vertical tipo medio cuerpo.
 - La foto actual queda en la parte inferior.
 - Se trabajó sobre la V9 estable para no desconfigurar el resto.
+
+VERSIÓN V14
+- Añadida imagen social para WhatsApp/Facebook: fotos/preview-whatsapp.jpg
+- Añadidas etiquetas Open Graph y Twitter Card.
+- Vista previa pensada para 1200x630.
+- URL pública configurada para:
+  https://bodas-guillermo-guadalupe.github.io/bodas-de-oro/
+
+VERSIÓN V15
+- Se aumentó ligeramente el grosor de la tipografía delgada en toda la invitación.
+- Se mantiene el estilo elegante, pero con mejor legibilidad en celular.
