@@ -79,15 +79,9 @@ VERSIÓN V9
 - Apps Script se encarga de registrar la respuesta en Google Forms.
 - Ya no aparece el mensaje inferior debajo del formulario.
 
-VERSIÓN V10
-- Portada compacta: el botón ABRIR INVITACIÓN queda visible al entrar.
-- Escritorio: foto antigua | datos | foto actual, todo en una pantalla.
-- Celular: dos fotos juntas arriba y datos abajo, todo dentro de una pantalla.
-- No es necesario hacer scroll para encontrar el botón.
-
-VERSIÓN V11
-- Portada reconstruida con clases nuevas para evitar conflictos de CSS anteriores.
-- En celular: foto antigua y foto actual lado a lado arriba.
-- Nombres y botón ABRIR INVITACIÓN abajo.
-- Todo queda dentro de la primera pantalla sin hacer scroll.
-- El botón debe verse desde el primer instante.
+VERSIÓN V12
+- Se volvió a la V9 estable y se rehizo únicamente la portada.
+- Se creó fotos/portada_movil.jpg con fotos 1 y 6 completas.
+- En móvil: collage arriba + datos y ABRIR INVITACIÓN abajo.
+- No hay que hacer scroll para encontrar el botón.
+- Se eliminó el sistema complejo de grid/vh de V10/V11.
