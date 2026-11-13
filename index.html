@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f3ea">
+  <title>Guillermo & Guadalupe | Bodas de Oro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="cover" class="cover">
+    <div class="cover-layout">
+      <div class="cover-photo cover-photo-old">
+        <div class="cover-photo-blur"></div>
+        <img src="fotos/foto1.jpg" alt="Guillermo y Guadalupe el día de su boda">
+      </div>
+
+      <div class="cover-center">
+        <div class="cover-center-inner">
+          <p class="eyebrow">50 ANIVERSARIO</p>
+          <span class="tiny-rule"></span>
+          <h1>Guillermo <i>&</i> Guadalupe</h1>
+          <p class="gold-title">Bodas de Oro</p>
+          <p class="date">28 · NOVIEMBRE · 2026</p>
+          <button id="openInvitation" class="primary-btn">ABRIR INVITACIÓN</button>
+        </div>
+      </div>
+
+      <div class="cover-photo cover-photo-now">
+        <div class="cover-photo-blur"></div>
+        <img src="fotos/foto6.jpg" alt="Guillermo y Guadalupe en la actualidad">
+      </div>
+    </div>
+  </div>
+
+  <main id="invitation" class="hidden">
+    <section class="hero photo-section">
+      <div class="photo-canvas hero-canvas" aria-hidden="true">
+        <div class="photo-blur"></div>
+        <img src="fotos/foto1.jpg" alt="">
+        <div class="photo-wash"></div>
+      </div>
+      <div class="hero-inner reveal">
+        <p class="eyebrow">CELEBRAMOS 50 AÑOS JUNTOS</p>
+        <h2>Guillermo <i>&</i> Guadalupe</h2>
+        <div class="ornament">✦</div>
+        <p class="lead">
+          Con mucha alegría agradecemos a Dios por estos 50 años de vida compartida
+          y queremos celebrar este momento acompañados de nuestra familia y seres queridos.
+        </p>
+        <p class="hero-date">28 de noviembre de 2026</p>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="inner reveal">
+        <p class="eyebrow">FALTA MUY POCO</p>
+        <h3>Cuenta regresiva</h3>
+        <div class="countdown">
+          <div><strong id="days">00</strong><span>Días</span></div>
+          <div><strong id="hours">00</strong><span>Horas</span></div>
+          <div><strong id="minutes">00</strong><span>Min</span></div>
+          <div><strong id="seconds">00</strong><span>Seg</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="inner reveal">
+        <span class="tiny-rule"></span>
+        <p class="quote">
+          “Cincuenta años de recuerdos, aprendizajes y momentos compartidos.
+          Hoy celebramos la dicha de seguir caminando juntos.”
+        </p>
+        <span class="tiny-rule"></span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner reveal">
+        <p class="eyebrow">ACOMPÁÑANOS</p>
+        <h3>Celebración</h3>
+        <div class="event-grid">
+          <article class="event-card">
+            <div class="event-icon">✟</div>
+            <h4>Misa</h4>
+            <p class="event-time">11:00 h</p>
+            <p>Iglesia de San José Ixtapa</p>
+            <a class="outline-btn" href="https://maps.app.goo.gl/ek96R9SrAaLtXgky7" target="_blank" rel="noopener">CÓMO LLEGAR</a>
+          </article>
+
+          <article class="event-card">
+            <div class="event-icon">✦</div>
+            <h4>Recepción</h4>
+            <p class="event-time">14:00 h</p>
+            <p>Calle Reforma Norte núm. 72</p>
+            <a class="outline-btn" href="https://maps.app.goo.gl/WSQ8hLWVt2FCN58R9" target="_blank" rel="noopener">CÓMO LLEGAR</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="inner reveal">
+        <p class="eyebrow">NUESTRA HISTORIA</p>
+        <h3>50 años juntos</h3>
+
+        <div class="gallery">
+          <figure class="photo-frame portrait"><img src="fotos/foto1.jpg" alt="Guillermo y Guadalupe - fotografía 1" loading="lazy"></figure>
+          <figure class="photo-frame portrait"><img src="fotos/foto2.jpg" alt="Guillermo y Guadalupe - fotografía 2" loading="lazy"></figure>
+          <figure class="photo-frame landscape wide"><img src="fotos/foto3.jpg" alt="Guillermo y Guadalupe - fotografía 3" loading="lazy"></figure>
+          <figure class="photo-frame portrait"><img src="fotos/foto4.jpg" alt="Guillermo y Guadalupe - fotografía 4" loading="lazy"></figure>
+          <figure class="photo-frame landscape wide"><img src="fotos/foto5.jpg" alt="Guillermo y Guadalupe - fotografía 5" loading="lazy"></figure>
+          <figure class="photo-frame portrait"><img src="fotos/foto6.jpg" alt="Guillermo y Guadalupe - fotografía 6" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+<section class="section date-panel">
+      <div class="inner reveal">
+        <p class="eyebrow">GUARDA LA FECHA</p>
+        <h3>28 · 11 · 2026</h3>
+        <p>Nos dará mucho gusto contar con tu presencia.</p>
+        <a class="primary-btn inline-btn"
+          target="_blank" rel="noopener"
+          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bodas%20de%20Oro%20-%20Guillermo%20y%20Guadalupe&dates=20261128T170000Z/20261128T230000Z&details=50%20aniversario%20de%20Guillermo%20Rodriguez%20y%20Guadalupe%20Carrasco.">
+          AÑADIR AL CALENDARIO
+        </a>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="inner reveal">
+        <p class="eyebrow">CONFIRMACIÓN</p>
+        <h3>¿Nos acompañas?</h3>
+        <p class="lead compact">
+          Confirma si asistirás, a nombre de quién está la invitación y cuántas personas irán.
+        </p>
+
+        <div class="rsvp-real">
+          
+        <form
+          id="rsvpForm"
+          class="rsvp-form"
+          action="https://script.google.com/macros/s/AKfycbzUZCx7a6c0HcDbBpDRnb5KoIGsheb95mHrJwjo1X9UrVG1kuGkq2sIytkHyLCgPBDQ6w/exec"
+          method="POST"
+          target="hidden_iframe"
+        >
+          <fieldset class="rsvp-group">
+            <legend>¿Asistirán?</legend>
+
+            <label class="radio-option">
+              <input
+                type="radio"
+                name="attendance"
+                value="Sí, asistiremos"
+                required
+              >
+              <span>Sí, asistiremos</span>
+            </label>
+
+            <label class="radio-option">
+              <input
+                type="radio"
+                name="attendance"
+                value="No podremos asistir"
+                required
+              >
+              <span>No podremos asistir</span>
+            </label>
+          </fieldset>
+
+          <label class="field-label">
+            ¿A nombre de quién está la invitación?
+            <input
+              type="text"
+              name="guestName"
+              placeholder="Nombre"
+              autocomplete="name"
+              required
+            >
+          </label>
+
+          <label class="field-label">
+            ¿Cuántas personas asistirán?
+            <input
+              type="number"
+              name="guestCount"
+              min="0"
+              max="20"
+              inputmode="numeric"
+              placeholder="Número de personas"
+              required
+            >
+          </label>
+<button type="submit" class="primary-btn full-btn">
+            CONFIRMAR ASISTENCIA
+          </button>
+
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+
+        <iframe
+          name="hidden_iframe"
+          id="hidden_iframe"
+          title="Envío de confirmación"
+          class="hidden-submit-frame"
+          src="about:blank"
+        ></iframe>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer photo-section">
+      <div class="photo-canvas footer-canvas" aria-hidden="true">
+        <div class="photo-blur"></div>
+        <img src="fotos/foto6.jpg" alt="">
+        <div class="photo-wash"></div>
+      </div>
+      <div class="footer-inner reveal">
+        <p class="eyebrow">BODAS DE ORO</p>
+        <h2>Guillermo <i>&</i> Guadalupe</h2>
+        <p>50 años compartiendo el camino</p>
+        <p class="footer-date">28 de noviembre de 2026</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

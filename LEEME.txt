@@ -1,0 +1,80 @@
+INVITACIÓN DIGITAL — BODAS DE ORO
+
+Guillermo Rodriguez & Guadalupe Carrasco
+28 de noviembre de 2026
+
+CONTENIDO
+- Portada collage: fotos 1 y 6.
+- Galería completa: fotos 1, 2, 3, 4, 5 y 6 en ese orden.
+- Misa: 11:00 h, Iglesia de San José Ixtapa.
+- Recepción: 14:00 h, Calle Reforma Norte núm. 72.
+- Botones de Google Maps.
+- Cuenta regresiva.
+- Botón de Google Calendar.
+- Formulario visual de confirmación.
+
+IMPORTANTE SOBRE EL FORMULARIO
+El formulario se ve y funciona en la página, pero actualmente no guarda
+las respuestas en internet. Falta conectarlo a un servicio como Google Forms.
+
+PARA PROBARLA
+Abre index.html con Chrome o Edge.
+
+PARA PUBLICARLA GRATIS
+Puedes subir todo el contenido de esta carpeta a GitHub Pages.
+
+ACTUALIZACIÓN V2
+- Se eliminó la sección Programa.
+- La foto principal ya no se recorta: se muestra completa con relleno suave en los laterales.
+- Se agregaron ajustes específicos para celular y tablet.
+
+
+VERSIÓN V3
+- Portada 1 + 6 sin recortes: ambas fotos se muestran completas.
+- Sección inicial con foto 1 completa.
+- Sección final con foto 6 completa.
+- Galería completa sin object-fit: cover.
+- Ajustes específicos para celular y pantallas angostas.
+
+VERSIÓN V4
+- La portada ya no pone texto encima de las fotografías.
+- Escritorio: foto antigua | panel de texto | foto actual.
+- Celular: foto antigua arriba, texto al centro, foto actual abajo.
+- Las fotos de portada mantienen su proporción y no se recortan.
+
+VERSIÓN V5
+- Formulario de confirmación conectado.
+- Botón CONFIRMAR ASISTENCIA abre:
+  https://forms.gle/UDGEfcwtFqpb2dPM6
+- Las respuestas se guardan en Google Forms.
+
+VERSIÓN V6
+- Formulario de Google incrustado dentro de la invitación.
+- Ya no abre otra página para confirmar asistencia.
+- Ajustado para escritorio y celular.
+
+VERSIÓN V7
+- El formulario vuelve a tener el diseño blanco/dorado de la invitación.
+- Ya no se muestra la interfaz de Google Forms.
+- Las respuestas se envían a Google Forms en segundo plano.
+- Campos conectados:
+  Asistencia -> entry.54929997
+  Nombre -> entry.1065227152
+  Personas -> entry.1766456161
+
+VERSIÓN V8
+- Se eliminó el mensaje inferior debajo del formulario.
+- Ya no aparece el mensaje de éxito por un temporizador.
+- El mensaje de éxito aparece cuando termina la respuesta del envío al iframe de Google.
+- Se agregaron campos auxiliares de envío fvv, pageHistory y draftResponse.
+
+VERSIÓN V9
+- El formulario de la invitación ya no envía directo a Google Forms.
+- Ahora envía a la aplicación web de Apps Script:
+  https://script.google.com/macros/s/AKfycbzUZCx7a6c0HcDbBpDRnb5KoIGsheb95mHrJwjo1X9UrVG1kuGkq2sIytkHyLCgPBDQ6w/exec
+- Parámetros enviados:
+  attendance
+  guestName
+  guestCount
+- Apps Script se encarga de registrar la respuesta en Google Forms.
+- Ya no aparece el mensaje inferior debajo del formulario.
