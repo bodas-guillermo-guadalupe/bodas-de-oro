@@ -84,3 +84,10 @@ VERSIÓN V10
 - Escritorio: foto antigua | datos | foto actual, todo en una pantalla.
 - Celular: dos fotos juntas arriba y datos abajo, todo dentro de una pantalla.
 - No es necesario hacer scroll para encontrar el botón.
+
+VERSIÓN V11
+- Portada reconstruida con clases nuevas para evitar conflictos de CSS anteriores.
+- En celular: foto antigua y foto actual lado a lado arriba.
+- Nombres y botón ABRIR INVITACIÓN abajo.
+- Todo queda dentro de la primera pantalla sin hacer scroll.
+- El botón debe verse desde el primer instante.

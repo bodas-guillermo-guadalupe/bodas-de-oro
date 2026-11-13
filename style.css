@@ -701,3 +701,269 @@ h3{
   cursor:wait;
   transform:none;
 }
+
+
+/* =========================================================
+   PORTADA V11 — CLASES ÚNICAS, SIN CONFLICTOS CON VERSIONES ANTERIORES
+   ========================================================= */
+.landing-v11{
+  position:fixed !important;
+  inset:0 !important;
+  z-index:1000 !important;
+  width:100vw !important;
+  height:100svh !important;
+  min-height:100svh !important;
+  overflow:hidden !important;
+  background:#f8f4eb !important;
+}
+
+.landing-v11__grid{
+  width:100% !important;
+  height:100% !important;
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(380px,34vw) minmax(0,1fr) !important;
+  grid-template-rows:1fr !important;
+}
+
+.landing-v11__photo{
+  position:relative !important;
+  width:100% !important;
+  height:100% !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  overflow:hidden !important;
+  display:grid !important;
+  place-items:center !important;
+  background:#2e2a26 !important;
+}
+
+.landing-v11__photo img{
+  position:relative !important;
+  z-index:2 !important;
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+
+.landing-v11__blur{
+  position:absolute !important;
+  inset:-24px !important;
+  z-index:1 !important;
+  background-position:center !important;
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
+  filter:blur(22px) !important;
+  transform:scale(1.08) !important;
+  opacity:.42 !important;
+}
+.landing-v11__blur--old{background-image:url("fotos/foto1.jpg") !important;}
+.landing-v11__blur--now{background-image:url("fotos/foto6.jpg") !important;}
+
+.landing-v11__panel{
+  position:relative !important;
+  z-index:3 !important;
+  width:100% !important;
+  height:100% !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  display:grid !important;
+  place-items:center !important;
+  padding:24px 26px !important;
+  background:linear-gradient(180deg,#fdfbf6,#f4eddf) !important;
+  border-left:1px solid rgba(184,154,96,.42) !important;
+  border-right:1px solid rgba(184,154,96,.42) !important;
+}
+
+.landing-v11__content{
+  width:100% !important;
+  max-width:500px !important;
+  text-align:center !important;
+}
+
+.landing-v11__eyebrow{
+  margin:0 0 7px !important;
+  font-family:"Montserrat",sans-serif !important;
+  font-size:.68rem !important;
+  font-weight:300 !important;
+  letter-spacing:.28em !important;
+  text-transform:uppercase !important;
+  color:#665e54 !important;
+}
+
+.landing-v11__rule{
+  display:block !important;
+  width:62px !important;
+  height:1px !important;
+  margin:11px auto !important;
+  background:#b89a60 !important;
+}
+
+.landing-v11__names{
+  margin:5px 0 !important;
+  font-family:"Cormorant Garamond",serif !important;
+  font-size:clamp(3rem,5.2vw,5.7rem) !important;
+  font-weight:500 !important;
+  line-height:.90 !important;
+  color:#35312c !important;
+}
+.landing-v11__names i{
+  color:#b89a60 !important;
+  font-weight:400 !important;
+}
+
+.landing-v11__gold{
+  margin:10px 0 8px !important;
+  font-family:"Cormorant Garamond",serif !important;
+  font-size:1.85rem !important;
+  color:#b89a60 !important;
+}
+
+.landing-v11__date{
+  margin:0 !important;
+  font-family:"Montserrat",sans-serif !important;
+  font-size:.73rem !important;
+  letter-spacing:.14em !important;
+  text-transform:uppercase !important;
+  color:#6d655d !important;
+}
+
+.landing-v11__button{
+  display:inline-block !important;
+  margin-top:18px !important;
+  padding:14px 24px !important;
+  border:0 !important;
+  background:#b89a60 !important;
+  color:#fff !important;
+  font-family:"Montserrat",sans-serif !important;
+  font-size:.70rem !important;
+  font-weight:500 !important;
+  letter-spacing:.13em !important;
+  cursor:pointer !important;
+}
+
+/* CELULAR: TODO EN UNA SOLA PANTALLA.
+   Fotos lado a lado arriba + panel abajo. */
+@media(max-width:700px){
+  .landing-v11{
+    height:100svh !important;
+    min-height:100svh !important;
+    overflow:hidden !important;
+  }
+
+  .landing-v11__grid{
+    height:100svh !important;
+    min-height:100svh !important;
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    grid-template-rows:44svh 56svh !important;
+  }
+
+  .landing-v11__photo{
+    width:100% !important;
+    height:44svh !important;
+    min-height:0 !important;
+    overflow:hidden !important;
+  }
+
+  .landing-v11__photo--old{
+    grid-column:1 !important;
+    grid-row:1 !important;
+  }
+
+  .landing-v11__photo--now{
+    grid-column:2 !important;
+    grid-row:1 !important;
+  }
+
+  .landing-v11__photo img{
+    width:100% !important;
+    height:44svh !important;
+    object-fit:contain !important;
+    object-position:center !important;
+  }
+
+  .landing-v11__blur{
+    inset:-12px !important;
+    filter:blur(15px) !important;
+    transform:scale(1.06) !important;
+  }
+
+  .landing-v11__panel{
+    grid-column:1 / -1 !important;
+    grid-row:2 !important;
+    width:100% !important;
+    height:56svh !important;
+    min-height:0 !important;
+    padding:10px 14px 12px !important;
+    border-left:0 !important;
+    border-right:0 !important;
+    border-top:1px solid rgba(184,154,96,.42) !important;
+    display:grid !important;
+    place-items:center !important;
+    overflow:hidden !important;
+  }
+
+  .landing-v11__content{
+    width:100% !important;
+    max-width:460px !important;
+  }
+
+  .landing-v11__eyebrow{
+    margin-bottom:3px !important;
+    font-size:.58rem !important;
+    letter-spacing:.20em !important;
+  }
+
+  .landing-v11__rule{
+    width:48px !important;
+    margin:7px auto !important;
+  }
+
+  .landing-v11__names{
+    margin:2px 0 !important;
+    font-size:clamp(2.1rem,11vw,3.45rem) !important;
+    line-height:.86 !important;
+  }
+
+  .landing-v11__gold{
+    margin:5px 0 !important;
+    font-size:1.28rem !important;
+  }
+
+  .landing-v11__date{
+    font-size:.60rem !important;
+    letter-spacing:.08em !important;
+  }
+
+  .landing-v11__button{
+    margin-top:10px !important;
+    padding:11px 17px !important;
+    font-size:.64rem !important;
+  }
+}
+
+/* CELULAR BAJO: mantiene el botón visible */
+@media(max-width:700px) and (max-height:760px){
+  .landing-v11__grid{
+    grid-template-rows:40svh 60svh !important;
+  }
+  .landing-v11__photo,
+  .landing-v11__photo img{
+    height:40svh !important;
+  }
+  .landing-v11__panel{
+    height:60svh !important;
+  }
+  .landing-v11__names{
+    font-size:clamp(1.95rem,10vw,3rem) !important;
+  }
+  .landing-v11__gold{
+    font-size:1.15rem !important;
+  }
+  .landing-v11__button{
+    margin-top:8px !important;
+    padding:10px 15px !important;
+  }
+}
