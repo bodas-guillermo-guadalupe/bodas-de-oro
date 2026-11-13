@@ -20,26 +20,27 @@ body{
 body.no-scroll{overflow:hidden}
 .hidden{display:none}
 
-/* PORTADA: las fotos nunca quedan tapadas por el texto. */
+/* PORTADA V10 — todo visible sin hacer scroll */
 .cover{
   position:fixed;
   inset:0;
   z-index:1000;
-  min-height:100svh;
-  overflow:auto;
+  width:100%;
+  height:100svh;
+  overflow:hidden;
   background:var(--ivory);
 }
 .cover-layout{
   width:100%;
-  min-height:100svh;
+  height:100%;
   display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(360px,520px) minmax(0,1fr);
-  align-items:stretch;
+  grid-template-columns:minmax(0,1fr) minmax(380px,34vw) minmax(0,1fr);
+  grid-template-rows:1fr;
 }
 .cover-photo{
   position:relative;
   min-width:0;
-  min-height:100svh;
+  min-height:0;
   overflow:hidden;
   display:grid;
   place-items:center;
@@ -47,13 +48,13 @@ body.no-scroll{overflow:hidden}
 }
 .cover-photo-blur{
   position:absolute;
-  inset:-28px;
+  inset:-24px;
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
-  filter:blur(24px);
-  transform:scale(1.10);
-  opacity:.48;
+  filter:blur(22px);
+  transform:scale(1.08);
+  opacity:.45;
 }
 .cover-photo-old .cover-photo-blur{background-image:url("fotos/foto1.jpg")}
 .cover-photo-now .cover-photo-blur{background-image:url("fotos/foto6.jpg")}
@@ -71,22 +72,24 @@ body.no-scroll{overflow:hidden}
   z-index:2;
   display:grid;
   place-items:center;
-  min-height:100svh;
-  padding:38px 28px;
+  min-width:0;
+  min-height:0;
+  padding:24px 26px;
   background:linear-gradient(180deg,#fdfbf6,#f6f0e5);
   border-left:1px solid rgba(184,154,96,.42);
   border-right:1px solid rgba(184,154,96,.42);
 }
 .cover-center-inner{
   width:100%;
+  max-width:500px;
   text-align:center;
 }
 .cover h1{
-  margin:10px 0;
+  margin:8px 0;
   font-family:"Cormorant Garamond",serif;
-  font-size:clamp(3rem,5vw,5.9rem);
+  font-size:clamp(3rem,5.2vw,5.8rem);
   font-weight:500;
-  line-height:.93;
+  line-height:.90;
   color:var(--dark);
 }
 .cover h1 i{
@@ -94,15 +97,114 @@ body.no-scroll{overflow:hidden}
   color:var(--gold);
 }
 .gold-title{
-  margin:13px 0;
+  margin:10px 0;
   font-family:"Cormorant Garamond",serif;
-  font-size:2rem;
+  font-size:clamp(1.5rem,2vw,2rem);
   color:var(--gold);
 }
 .date{
-  font-size:.8rem;
-  letter-spacing:.17em;
+  font-size:.75rem;
+  letter-spacing:.15em;
   text-transform:uppercase;
+}
+.cover .primary-btn{
+  margin-top:18px;
+  padding:14px 24px;
+}
+
+/* TABLET: sigue siendo una sola pantalla */
+@media(min-width:701px) and (max-width:1050px){
+  .cover-layout{
+    grid-template-columns:minmax(0,1fr) minmax(330px,40vw) minmax(0,1fr);
+  }
+  .cover-center{
+    padding:20px 18px;
+  }
+  .cover h1{
+    font-size:clamp(2.7rem,6vw,4.5rem);
+  }
+}
+
+/* CELULAR: fotos arriba, texto abajo, todo dentro de 100svh */
+@media(max-width:700px){
+  .cover{
+    height:100svh;
+    overflow:hidden;
+  }
+  .cover-layout{
+    height:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:42% 58%;
+  }
+  .cover-photo-blur{
+    inset:-15px;
+    filter:blur(16px);
+    transform:scale(1.07);
+    opacity:.42;
+  }
+  .cover-center{
+    grid-column:1/-1;
+    grid-row:2;
+    min-height:0;
+    height:100%;
+    padding:14px 14px 16px;
+    border-left:0;
+    border-right:0;
+    border-top:1px solid rgba(184,154,96,.42);
+    display:grid;
+    place-items:center;
+  }
+  .cover-center-inner{
+    max-width:480px;
+  }
+  .cover .eyebrow{
+    margin-bottom:5px;
+    font-size:.62rem;
+    letter-spacing:.22em;
+  }
+  .cover .tiny-rule{
+    margin:9px auto;
+    width:56px;
+  }
+  .cover h1{
+    margin:4px 0;
+    font-size:clamp(2.25rem,11.5vw,3.8rem);
+    line-height:.88;
+  }
+  .cover .gold-title{
+    margin:7px 0;
+    font-size:1.45rem;
+  }
+  .cover .date{
+    font-size:.64rem;
+    letter-spacing:.10em;
+  }
+  .cover .primary-btn{
+    margin-top:13px;
+    padding:13px 20px;
+    font-size:.68rem;
+  }
+}
+
+/* Teléfonos bajos/pequeños */
+@media(max-width:390px), (max-height:700px){
+  .cover-layout{
+    grid-template-rows:38% 62%;
+  }
+  .cover-center{
+    padding:10px 10px 12px;
+  }
+  .cover h1{
+    font-size:clamp(2rem,10.5vw,3.2rem);
+  }
+  .cover .gold-title{
+    font-size:1.25rem;
+  }
+  .cover .primary-btn{
+    margin-top:10px;
+    padding:11px 17px;
+  }
 }
 
 .eyebrow{
@@ -396,46 +498,6 @@ h3{
 
 /* CELULAR */
 @media(max-width:700px){
-  .cover{
-    overflow:auto;
-  }
-  .cover-layout{
-    min-height:auto;
-    display:grid;
-    grid-template-columns:1fr;
-    grid-template-rows:auto auto auto;
-  }
-  .cover-photo{
-    min-height:0;
-    height:auto;
-    background:#2f2b27;
-  }
-  .cover-photo img{
-    width:100%;
-    height:auto;
-    object-fit:contain;
-    object-position:center;
-  }
-  .cover-photo-blur{
-    display:none;
-  }
-  .cover-center{
-    min-height:0;
-    padding:34px 18px;
-    border-left:0;
-    border-right:0;
-    border-top:1px solid rgba(184,154,96,.42);
-    border-bottom:1px solid rgba(184,154,96,.42);
-  }
-  .cover h1{
-    font-size:clamp(2.45rem,13vw,4.1rem);
-    line-height:.93;
-  }
-  .gold-title{font-size:1.7rem}
-  .date{
-    font-size:.7rem;
-    letter-spacing:.12em;
-  }
 
   .section{
     padding:66px 15px;
@@ -508,8 +570,6 @@ h3{
 
 /* Pantallas de celular muy angostas */
 @media(max-width:390px){
-  .cover-center{padding:28px 12px}
-  .cover h1{font-size:2.35rem}
   .hero h2,.footer h2{font-size:2.5rem}
   h3{font-size:2.35rem}
   .countdown strong{font-size:2.4rem}

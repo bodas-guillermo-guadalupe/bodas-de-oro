@@ -78,3 +78,9 @@ VERSIÓN V9
   guestCount
 - Apps Script se encarga de registrar la respuesta en Google Forms.
 - Ya no aparece el mensaje inferior debajo del formulario.
+
+VERSIÓN V10
+- Portada compacta: el botón ABRIR INVITACIÓN queda visible al entrar.
+- Escritorio: foto antigua | datos | foto actual, todo en una pantalla.
+- Celular: dos fotos juntas arriba y datos abajo, todo dentro de una pantalla.
+- No es necesario hacer scroll para encontrar el botón.
