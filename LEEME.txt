@@ -98,3 +98,10 @@ VERSIÓN V14
 VERSIÓN V15
 - Se aumentó ligeramente el grosor de la tipografía delgada en toda la invitación.
 - Se mantiene el estilo elegante, pero con mejor legibilidad en celular.
+
+VERSIÓN V16
+- Imagen social copiada a la raíz como og-image-v16.jpg.
+- Open Graph reforzado con og:image:secure_url, tipo, ancho, alto, site_name y locale.
+- URL de prueba para romper caché de WhatsApp:
+  https://bodas-guillermo-guadalupe.github.io/bodas-de-oro/?v=16
+- La imagen social es 1200x630 JPEG.
