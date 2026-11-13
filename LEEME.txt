@@ -79,9 +79,11 @@ VERSIÓN V9
 - Apps Script se encarga de registrar la respuesta en Google Forms.
 - Ya no aparece el mensaje inferior debajo del formulario.
 
-VERSIÓN V12
-- Se volvió a la V9 estable y se rehizo únicamente la portada.
-- Se creó fotos/portada_movil.jpg con fotos 1 y 6 completas.
-- En móvil: collage arriba + datos y ABRIR INVITACIÓN abajo.
-- No hay que hacer scroll para encontrar el botón.
-- Se eliminó el sistema complejo de grid/vh de V10/V11.
+VERSIÓN V13
+- Portada móvil reorganizada según la indicación visual del usuario:
+  1) foto boda arriba,
+  2) panel de abrir invitación en medio,
+  3) foto actual abajo.
+- La foto de boda usa recorte vertical tipo medio cuerpo.
+- La foto actual queda en la parte inferior.
+- Se trabajó sobre la V9 estable para no desconfigurar el resto.
